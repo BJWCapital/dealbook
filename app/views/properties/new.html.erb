@@ -1,0 +1,59 @@
+<h1>New property</h1>
+
+<% form_for(@property) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :ask_price %><br />
+    <%= f.text_field :ask_price %>
+  </p>
+  <p>
+    <%= f.label :current_noi %><br />
+    <%= f.text_field :current_noi %>
+  </p>
+  <p>
+    <%= f.label :pro_forma_noi %><br />
+    <%= f.text_field :pro_forma_noi %>
+  </p>
+  <p>
+    <%= f.label :occupancy %><br />
+    <%= f.text_field :occupancy %>
+  </p>
+  <p>
+    <%= f.label :class %><br />
+    <%= f.text_field :class %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </p>
+  <p>
+    <%= f.label :opportunity %><br />
+    <%= f.text_field :opportunity %>
+  </p>
+  <p>
+    <%= f.label :address_id %><br />
+    <%= f.text_field :address_id %>
+  </p>
+  <p>
+    <%= f.label :status_id %><br />
+    <%= f.text_field :status_id %>
+  </p>
+  <p>
+    <%= f.label :msa_id %><br />
+    <%= f.text_field :msa_id %>
+  </p>
+  <p>
+    <%= f.label :source %><br />
+    <%= f.text_field :source %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', properties_path %>

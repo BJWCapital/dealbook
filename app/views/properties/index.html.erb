@@ -1,0 +1,42 @@
+<h1>Listing properties</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Ask price</th>
+    <th>Current noi</th>
+    <th>Pro forma noi</th>
+    <th>Occupancy</th>
+    <th>Class</th>
+    <th>Description</th>
+    <th>Opportunity</th>
+    <th>Address</th>
+    <th>Status</th>
+    <th>Msa</th>
+    <th>Source</th>
+  </tr>
+
+<% @properties.each do |property| %>
+  <tr>
+    <td><%=h property.name %></td>
+    <td><%=h property.ask_price %></td>
+    <td><%=h property.current_noi %></td>
+    <td><%=h property.pro_forma_noi %></td>
+    <td><%=h property.occupancy %></td>
+    <td><%=h property.class %></td>
+    <td><%=h property.description %></td>
+    <td><%=h property.opportunity %></td>
+    <td><%=h property.address_id %></td>
+    <td><%=h property.status_id %></td>
+    <td><%=h property.msa_id %></td>
+    <td><%=h property.source %></td>
+    <td><%= link_to 'Show', property %></td>
+    <td><%= link_to 'Edit', edit_property_path(property) %></td>
+    <td><%= link_to 'Destroy', property, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New property', new_property_path %>

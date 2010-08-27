@@ -1,0 +1,63 @@
+<p>
+  <b>Name:</b>
+  <%=h @property.name %>
+</p>
+
+<p>
+  <b>Ask price:</b>
+  <%=h @property.ask_price %>
+</p>
+
+<p>
+  <b>Current noi:</b>
+  <%=h @property.current_noi %>
+</p>
+
+<p>
+  <b>Pro forma noi:</b>
+  <%=h @property.pro_forma_noi %>
+</p>
+
+<p>
+  <b>Occupancy:</b>
+  <%=h @property.occupancy %>
+</p>
+
+<p>
+  <b>Class:</b>
+  <%=h @property.class %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @property.description %>
+</p>
+
+<p>
+  <b>Opportunity:</b>
+  <%=h @property.opportunity %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%=h @property.address_id %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%=h @property.status_id %>
+</p>
+
+<p>
+  <b>Msa:</b>
+  <%=h @property.msa_id %>
+</p>
+
+<p>
+  <b>Source:</b>
+  <%=h @property.source %>
+</p>
+
+
+<%= link_to 'Edit', edit_property_path(@property) %> |
+<%= link_to 'Back', properties_path %>
